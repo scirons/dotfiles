@@ -2,6 +2,8 @@
 
 Standardized and modularized configurations files (dotfiles) for setting up and maintaining consistent unified development environments across unix based workstations for associates of Scirons.
 
+![screenshot](https://github.com/user-attachments/assets/ac7e6596-80f3-411d-a2ac-6604407febc1)
+
 # Software
 
 - [Aerospace](https://github.com/nikitabobko/AeroSpace) - A tiling window manager for macOS.
