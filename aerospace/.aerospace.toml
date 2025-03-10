@@ -1,0 +1,97 @@
+start-at-login = true
+
+enable-normalization-flatten-containers = true
+enable-normalization-opposite-orientation-for-nested-containers = true
+
+default-root-container-layout = 'tiles'
+
+default-root-container-orientation = 'auto'
+
+on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
+
+automatically-unhide-macos-hidden-apps = false
+
+# Sketchybar
+after-startup-command = ['exec-and-forget sketchybar']
+
+exec-on-workspace-change = ['/bin/bash', '-c',
+    'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE'
+]
+
+# Possible values: (qwerty|dvorak)
+[key-mapping]
+preset = 'qwerty'
+
+[gaps]
+outer.bottom =     [{monitor.'^built-in retina display$' = 10 }, 12]
+outer.top =        [{monitor.'^built-in retina display$' = 10 }, 48] # Top gap for status bar
+inner.horizontal = 7
+inner.vertical =   7
+outer.left =       20
+outer.right =      20
+
+# Terminal
+[mode.main.binding]
+ alt-enter = 'exec-and-forget open -n -a Kitty'
+
+# Window Shift Focus 
+alt-h = 'focus left'
+alt-j = 'focus down'
+alt-k = 'focus up'
+alt-l = 'focus right'
+
+# Window Move Order
+alt-shift-h = 'move left'
+alt-shift-j = 'move down'
+alt-shift-k = 'move up'
+alt-shift-l = 'move right'
+
+# Window Resize
+alt-ctrl-h= 'resize smart -100'
+alt-ctrl-l= 'resize smart +100'
+
+# Workspace Allocation
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+alt-0 = 'workspace 10'
+
+# Move Workspace Allocation
+alt-shift-1 = 'move-node-to-workspace 1'
+alt-shift-2 = 'move-node-to-workspace 2'
+alt-shift-3 = 'move-node-to-workspace 3'
+alt-shift-4 = 'move-node-to-workspace 4'
+alt-shift-5 = 'move-node-to-workspace 5'
+alt-shift-6 = 'move-node-to-workspace 6'
+alt-shift-7 = 'move-node-to-workspace 7'
+alt-shift-8 = 'move-node-to-workspace 8'
+alt-shift-9 = 'move-node-to-workspace 9'
+alt-shift-0 = 'move-node-to-workspace 10'
+
+alt-tab = 'workspace-back-and-forth'
+alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
+
+alt-q = 'close --quit-if-last-window'
+
+# Service mode - Interactive settings
+alt-shift-semicolon = 'mode service'
+
+[mode.service.binding]
+
+# Exit service mode - reload config.
+esc = ['reload-config', 'mode main']
+
+# Reset Layout 
+r = ['flatten-workspace-tree', 'mode main']
+
+# Layout toggles
+f = ['layout floating tiling', 'mode main']
+
+# Close all windows except current
+backspace = ['close-all-windows-but-current', 'mode main']
