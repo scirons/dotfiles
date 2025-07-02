@@ -1,8 +1,7 @@
-# *Scirons* Standard dotfiles
+# *Visa* Standard dotfiles
 
-Standardized and modularized configurations files (dotfiles) for setting up and maintaining consistent unified development environments across unix based workstations for associates of Scirons.
+Standardized and modularized configurations files (dotfiles) for setting up and maintaining consistent unified development environments across unix based workstations at *Visa* Inc.
 
-![screenshot](https://github.com/user-attachments/assets/ac7e6596-80f3-411d-a2ac-6604407febc1)
 
 # Software
 
@@ -11,7 +10,6 @@ Standardized and modularized configurations files (dotfiles) for setting up and 
 - [Kitty](https://github.com/kovidgoyal/kitty) - A GPU-accelerated terminal emulator.
 - [MPV](https://github.com/mpv-player/mpv) - A media player.
 - [Neofetch](https://github.com/dylanaraps/neofetch) - A system information tool.
-- [Newsboat](https://github.com/newsboat/newsboat) - An RSS/Atom feed reader for the terminal.
 - [Neovim](https://github.com/neovim/neovim) - A modern fork of Vim.
 - [Sketchybar](https://github.com/FelixKratz/SketchyBar) - A customizable status bar for macOS.
 - [Yazi](https://github.com/sxyazi/yazi) - A terminal file manager.
