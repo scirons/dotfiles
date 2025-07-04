@@ -102,3 +102,17 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# Proxy Configuration
+function visaproxy() {
+  export http_proxy="http://userproxy.visa.com:80";
+  export https_proxy="http://userproxy.visa.com:443";
+}
+
+function noproxy() {
+  unset http_proxy;
+  unset https_proxy;
+}
+
+# Comment out if you don't want the proxies enabled by default
+visaproxy
